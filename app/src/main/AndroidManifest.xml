@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.objectfanatics.chrono0016">
 
+    <!--
+      権限の付与。
+      記述し忘れても、当該権限を利用している PermissionsDispatcher 関連コードは
+      ビルド時にも実行時にもエラーとならず、自動的に権限申請が却下扱いとなるので要注意。
+    -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
